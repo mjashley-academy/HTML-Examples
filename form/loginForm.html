@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LoginForm</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 250px;
+            height: 430px;
+            border: 5px;
+            font-size: larger;
+            padding: 0px 30px;
+            background-color: lightcyan;
+            border-style: solid;
+            border-color: black black green;
+            border-radius: 5% 5% 50px 50px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            position: relative;
+            top:30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #email {
+            font-size: 20px;
+            border-radius: 5px;
+            border-color: transparent transparent seagreen black;
+            border-style: inset;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: lightcyan;
+        }
+
+        #password {
+            font-size: 20px;
+            border-radius: 5px;
+            border-color: transparent transparent seagreen black;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: lightcyan;
+        }
+
+        #submit {
+            font-size: 20px;
+            border-radius: 50px;
+            width: 200px;
+            height: 50px;
+            border-style: solid;
+            border-color: red;
+            background-color: white;
+            border-style: inset;
+        }
+        #submit:hover{
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            border: 5px;
+            border-style: solid;
+            border-color: black blueviolet yellow red;
+            top:-30px;
+            left:130px;
+        }
+        img{
+            width:40px;
+            height: 40px;
+            border-radius: 50px; 
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <form>
+            <h1>Login</h1>
+            <p><label for="email">Email</label></p>
+            <p><input type="text" name="email" id="email" placeholder="your email"></p>
+            <p><label for="password">Password</label></p>
+            <p><input type="password" name="password" id="password" placeholder="your password"></p>
+            <p><input type="submit" value="Sign in" id="submit"></p>
+            <p>forgot password?<a href="ashlyacademy.com">click here</a></p>
+            <p>Don't have account?<a href="sign up">sign up</a></p>
+        </form>
+        <div class="circle">
+            <img src="images/emblem.jpg" alt="emblem">
+        </div>
+    </div>
+
+</body>
+
+</html>
