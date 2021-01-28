@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        h1 {
+            background-color: darkturquoise;
+            display: flex;
+            width: 100%;
+            height: 50px;
+        }
+
+        h2 {
+            display: block;
+        }
+
+        .container {
+            background-color: cyan;
+            width: 100%;
+            height: 1000px;
+            padding: 20px;
+        }
+
+        #address {
+            row-gap: 3;
+            columns: 30;
+        }
+
+        .box {
+            width: 100%;
+            height: 250px;
+        }
+
+        .firstPotion {
+            width: 5%;
+            height: 80%;
+            text-align: center;
+            float: left;
+        }
+
+        .secondPotion {
+            width: 10%;
+            height: 80%;
+            float: left;
+            text-align: center;
+        }
+
+        .thirdPotion {
+            width: 20%;
+            height: 80%;
+            float: left;
+            text-align: center;
+        }
+
+        .send {
+            height: 100px;
+            width: 200px;
+            position: relative;
+            left: 500px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <div class="container">
+        <form>
+            <p><label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your First Name">
+            </p>
+            <p><label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last Name">
+            </p>
+            <p><label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </p>
+            <p><label for="email">Emil ID:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email address">
+            </p>
+            <p><label for="mobileno">Mobile Number:</label>
+                <input type="number" id="mobileno" name="mobileno" placeholder="Enter your Mobile Number">
+            </p>
+            <p><label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </p>
+            <p><label for="address">Address:</label></p>
+            <p><textarea id="address" name="address" placeholder="Enter Comments"></textarea> </p>
+            <p><label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter City Name">
+            </p>
+            <p><label for="pincode">Pin Code:</label>
+                <input type="text" id="pincode" name="pincode" placeholder="Enter pincode">
+            </p>
+            <p><label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="Enter State">
+            </p>
+            <p><label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter Country">
+            </p>
+            <p><label for="hobbies">Hobbies</label></p>
+            <p><input type="checkbox" id="drawing" name="hobbies" value="drawing">
+                <label for="drawing">Drawing</label>
+                <input type="checkbox" id="singing" name="hobbies" value="singing">
+                <label for="singing">Singing</label>
+                <input type="checkbox" id="dancing" name="dancing" value="dancing">
+                <label for="dancing">Dancing</label>
+                <input type="checkbox" id="sketching" name="sketching" value="sketching">
+                <label for="sketching">Sketching</label>
+                <input type="checkbox" id="others" name="others" value="others">
+                <label for="others">Others</label>
+                <input type="text" id="hobbies" name="hobbies">
+            </p>
+            <p><label for="qualification">Qualification:</label></p>
+            <div class="box">
+                <div class="firstPotion">
+                    <h4>SI.No.</h4>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <div class="secondPotion">
+                    <h4>Examination</h4>
+                    <p><label for="classX">ClassX</label></p>
+                    <p><label for="classXII">ClassXII</label></p>
+                    <p><label for="graduation">Graduation</label></p>
+                    <p><label for="masters">Masters</label></p>
+                </div>
+                <div class="thirdPotion">
+                    <h4>Board</h4>
+                    <p><input type="text" id="classX" name="classX"></p>
+                    <p><input type="text" id="classXII" name="classXII"></p>
+                    <p><input type="text" id="graduation" name="graduation"></p>
+                    <p><input type="text" id="masters" name="masters"></p>
+                    <p>(10 Char max)</p>
+                </div>
+                <div class="thirdPotion">
+                    <h4>Percentage</h4>
+                    <p><input type="text" id="classX" name="classX"></p>
+                    <p><input type="text" id="classXII" name="classXII"></p>
+                    <p><input type="text" id="graduation" name="graduation"></p>
+                    <p><input type="text" id="masters" name="masters"></p>
+                    <p>(upto 2 decimal)</p>
+                </div>
+                <div class="thirdPotion">
+                    <h4>Year Of Passing</h4>
+                    <p><input type="text" id="classX" name="classX"></p>
+                    <p><input type="text" id="classXII" name="classXII"></p>
+                    <p><input type="text" id="graduation" name="graduation"></p>
+                    <p><input type="text" id="masters" name="masters"></p>
+                    <p>(upto 2 decimal)</p>
+                </div>
+            </div>
+            <p><label for="courses">Courses Application For:</label>
+                <label for="bca">BCA</label>
+                <input type="radio" id="bca" name="courses">
+                <label for="bcom">B.COM</label>
+                <input type="radio" id="bcom" name="courses">
+                <label for="bsc">B.SC</label>
+                <input type="radio" id="bsc" name="courses">
+                <label for="ba">B.A</label>
+                <input type="radio" id="ba" name="courses">
+            </p>
+            <div class="send">
+                <p><input type="submit" id="submit" value="Submit">
+                    <input type="reset" id="reset" value="Reset">
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
