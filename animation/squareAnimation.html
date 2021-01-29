@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>square animation </title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            margin: 0 auto;
+            width:300px;
+            height:300px;
+            box-shadow: 10px 10px 5px grey;
+            background-color: moccasin;
+            animation-name: square;
+            animation-duration: 5s;
+            position: relative;
+        }
+        @keyframes square{ 
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        .sell{
+            width:100px;
+            height:100px;
+            border: 1px solid blue;
+            float:left;
+            border-radius: 5%;
+            text-align: center;
+            font-size: 50px;
+        }
+        .sell#yellow{
+            background-color: yellow;
+        }
+        .sell#blue{
+            background-color: blue;
+        }
+        .sell#green{
+            background-color:greenyellow;
+        }
+        .sell#red{
+            background-color: red;
+        }
+        .sell#white{
+            background-color:white;
+        }
+        .sell#orange{
+            background-color: orange;
+        }
+        
+    </style>   
+</head>
+<body>
+    <div class="container">
+        <div class="sell" id="yellow"></div>
+        <div class="sell" id="blue"></div>
+        <div class="sell" id="green"></div>
+        <div class="sell" id="red"></div>
+        <div class="sell" id="white">hmc</div>
+        <div class="sell" id="orange"></div>
+        <div class="sell" id="green"></div>
+        <div class="sell" id="blue"></div>
+        <div class="sell" id="red"></div>
+    </div>
+    
+</body>
+</html>
